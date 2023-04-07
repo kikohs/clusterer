@@ -1,0 +1,35 @@
+{
+  "name": "clusterer",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Fritz Lekschas",
+      "url": "https://lekschas.de"
+    },
+    {
+      "name": "Xinyi Zhou"
+    },
+    {
+      "name": "Kirell Benzi"
+    }
+  ],
+  "description": "Clustering functionalities",
+  "main": "dist/clusterer.js",
+  "type": "module",
+  
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.20.2"
+  },
+  "dependencies": {
+    "@flekschas/utils": "^0.30.1",
+    "skmeans": "^0.11.3",
+    "umap-js": "^1.3.3"
+  }
+}
