@@ -1,6 +1,7 @@
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser'; 
+import { string } from 'rollup-plugin-string';
 
  const config = {
    input: 'src/index.js',
@@ -10,7 +11,11 @@ import terser from '@rollup/plugin-terser';
      name: 'Clusterer',
    },
 
-    plugins: [commonjs(), resolve(), terser()],
+    plugins: [
+        resolve(), commonjs(),
+        string({ include: /(umap-js|skmeans)/ }),
+        terser(),
+    ],
  };
  
  export default config;

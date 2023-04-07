@@ -16,7 +16,6 @@
   "description": "Clustering functionalities",
   "main": "dist/clusterer.js",
   "type": "module",
-  
   "scripts": {
     "build": "rollup --config"
   },
@@ -25,7 +24,8 @@
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.0",
-    "rollup": "^3.20.2"
+    "rollup": "^3.20.2",
+    "rollup-plugin-string": "^3.0.0"
   },
   "dependencies": {
     "@flekschas/utils": "^0.30.1",
